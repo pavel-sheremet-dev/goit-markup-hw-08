@@ -1,0 +1,56 @@
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu-list__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include _fw_fs_lh_ls(50, 14, 16, 0.02);
+  color: var(--titles-text-color);
+
+  &_accent-color,
+  &:hover::after,
+  &:focus::after,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &_bottom-line::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transform: scale(0);
+    transition: transform 250ms var(--timing-func);
+  }
+
+  &_bottom-line:hover::after,
+  &_bottom-line:focus::after {
+    transform: scale(1);
+  }
+
+  &_accent-color::after {
+    transform: scale(1);
+  }
+}
+
+.menu-list__icon {
+  margin-right: 10px;
+  display: block;
+  fill: currentColor;
+}

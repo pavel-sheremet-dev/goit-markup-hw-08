@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Портфолио</title>
+</head>
+
+<body>
+
+  <!-- website header -->
+
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo link" href="./index.html"><span class="logo_accent-color">Web</span>Studio</a>
+      <nav class="navigation">
+        <ul class="menu-list list">
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link_bottom-line link" href="./index.html">
+              Студия
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link_bottom-line menu-list__link_accent-color link"
+              href="./portfolio.html">
+              Портфолио
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link_bottom-line link" href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="menu-list header__menu-list list">
+        <li class="menu-list__item">
+          <a class="menu-list__link link" href="mailto:info@devstudio.com">
+            <svg class="menu-list__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link link" href="tel:+380961111111">
+            <svg class="menu-list__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- portfolio section -->
+    
+    <section class="section">
+      <div class="container">
+        <h1 class="visually-hidden">Портфолио</h1>
+        
+        <!-- projects filter -->
+        
+        <ul class="filter portfolio__filter list">
+          <li class="filter__item">
+            <button class="filter__btn" type="button">Все</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" type="button">Веб-сайты</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" type="button">Приложения</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" type="button">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        
+        <!-- projects list -->
+        
+        <ul class="grid list">
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/tehnokryak.jpg" alt="Страница сайта" width="370" height="294" height="294">
+                  <p class="card-type3__description">
+                    Технокряк это современная площадка распространения коронавируса.
+                    Компании используют эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name">Технокряк</h2>
+                  <p class="card-type3__type">Веб-сайт</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/new-orlean-vs-golden-star.jpg" alt="Постер" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-type3__type">Дизайн</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/seafood.jpg" alt="Логотип ресторана" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Ресторан Seafood</h2>
+                  <p class="card-type3__type">Приложение</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/prime.jpg" alt="Наушники" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Проект Prime</h2>
+                  <p class="card-type3__type">Маркетинг</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Проект Boxes</h2>
+                  <p class="card-type3__type">Приложение</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/inspiration-has-no-borders.jpg" alt="Страница сайта"
+                    width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Inspiration has no Borders</h2>
+                  <p class="card-type3__type">Веб-сайт</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/limited-edition.jpg" alt="Открытая книга" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Издание Limited Edition</h2>
+                  <p class="card-type3__type">Дизайн</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/lab.jpg" alt="Бирка" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Проект LAB</h2>
+                  <p class="card-type3__type">Маркетинг</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+          <li class="grid__cell grid_column-qty_3">
+            <article class="card-type3">
+              <a class="card-type3__link link" href="">
+                <div class="card-type3__overlay">
+                  <img class="card-type3__img" src="./images/portfolio/growing-business.jpg"
+                    alt="Нотбкук с загруженным приложением" width="370" height="294">
+                  <p class="card-type3__description"></p>
+                </div>
+                <div class="card-type3__title">
+                  <h2 class="card-type3__name" lang="en">Growing Business</h2>
+                  <p class="card-type3__type">Приложение</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer content -->
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__contacts">
+        <a class="logo logo_secondary-color link" href="./index.html"><span class="logo_accent-color">Web</span>Studio</a>
+        <address class="footer__address" id="contacts">
+          <ul class="footer__menu list">
+            <li class="footer__item"><a class="footer__link footer__link_address-color link"
+                href="https://goo.gl/maps/BkVQLuisvxyrpe818" target="_blank" rel="noopener noreferrer nofollow">г. Киев,
+                пр-т
+                Леси Украинки, 26</a>
+            </li>
+            <li class="footer__item"><a class="footer__link link " href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item"><a class="footer__link link " href="tel:+380961111111">+38 096 111
+                11 11</a></li>
+          </ul>
+        </address>
+      </div>
+  
+      <div class="footer__social">
+        <b class="footer__title">присоединяйтесь</b>
+        <ul class="social-list list">
+          <li class="social-list__item">
+            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <svg class="social-list__icon social-list__icon_dark-theme">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <svg class="social-list__icon social-list__icon_dark-theme">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <svg class="social-list__icon social-list__icon_dark-theme">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <svg class="social-list__icon social-list__icon_dark-theme">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer__subscribe">
+        <b class="footer__title">Подпишитесь на рассылку</b>
+        <form class="subscribe" name="subscribe-form" method="GET" autocomplete="on">
+          <label for="email"></label>
+          <input class="subscribe__mail-imput" type="email" name="email" id="email" placeholder="E-mail" required>
+          <button class="subscribe__btn" type="submit">Подписаться
+            <svg class="subscribe__icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+  
+    </div>
+  </footer>
+
+</body>
+</html>

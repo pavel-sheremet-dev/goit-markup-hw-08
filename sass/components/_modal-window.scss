@@ -1,0 +1,24 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  /* temporary */
+  min-height: 400px;
+  transform: translate(-50%, -50%) scaleY(1);
+  border-radius: 4px;
+  background-color: var(--alternate-logo-color);
+  transition: transform 250ms var(--timing-func);
+}
+
+.backdrop_is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

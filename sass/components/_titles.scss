@@ -1,0 +1,7 @@
+.title {
+  margin-bottom: 50px;
+
+  @include _fs_lh_ls(36, 42);
+  text-align: center;
+  color: var(--titles-text-color);
+}

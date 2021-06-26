@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid__cell {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.grid_column-qty_3 {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.grid_column-qty_4 {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.grid_column-qty_6 {
+  flex-basis: calc((100% - 180px) / 6);
+}

@@ -15,7 +15,8 @@
 
 .card-type3__img {
   background-color: var(--bg-color);
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-type3__description {

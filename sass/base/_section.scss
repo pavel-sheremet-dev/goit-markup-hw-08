@@ -3,13 +3,41 @@ body {
   color: var(--primary-text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+// 0-479 responsive mobile container
+.container {
+  width: 100%;
+  padding: 0 15px;
+  outline: 1px solid red;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// 480-767 adaptive mobile container
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+// 768-1199 adaptive tablet container
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+// 1200+ adaptive tablet container
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

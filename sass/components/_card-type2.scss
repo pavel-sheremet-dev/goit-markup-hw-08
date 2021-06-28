@@ -4,7 +4,8 @@
 
 .card-type2__img {
   background-color: var(--bg-color);
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-type2__desctiprtion {

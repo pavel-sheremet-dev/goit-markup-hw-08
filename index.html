@@ -15,55 +15,132 @@
   <title>Веб-студия</title>
 </head>
 
-<body>
+<body body-locker>
 
   <!-- website header -->
 
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <a class="logo header__logo link" href="./index.html"><span class="logo_accent-color">Web</span>Studio</a>
       <nav class="navigation">
-        <ul class="menu-list list">
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line menu-list__link_accent-color link"
+        <ul class="nav-menu list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link_accent-color link"
               href="./index.html">
               Студия
             </a>
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line link"
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link"
               href="./portfolio.html">
               Портфолио
             </a>
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line link"
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link"
               href="#contacts">
               Контакты
             </a>
           </li>
         </ul>
       </nav>
-      <ul class="menu-list header__menu-list list">
-        <li class="menu-list__item">
-          <a class="menu-list__link link" href="mailto:info@devstudio.com">
-            <svg class="menu-list__icon" width="16" height="12">
+      <ul class="contacts-menu list">
+        <li class="contacts-menu__item">
+          <a class="contacts-menu__link link" href="mailto:info@devstudio.com">
+            <svg class="contacts-menu__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link link" href="tel:+380961111111">
-            <svg class="menu-list__icon" width="10" height="16">
+        <li class="contacts-menu__item">
+          <a class="contacts-menu__link link" href="tel:+380961111111">
+            <svg class="contacts-menu__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
           </a>
         </li>
       </ul>
+      <button class="menu-opener-btn" 
+        type="button" 
+        data-menu-button
+        aria-label="Кнопка открытия мобильного меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu-container">
+        <svg class="menu-opener-btn__icon" width="40" height="40">
+          <use class="menu-opener-btn__icon_open" href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+
+    <!-- MOBILE MENU with backdrop -->
+
+    <div class="mobile-menu__backdrop backdrop backdrop_is-hidden is-close" data-menu>
+      <div class="mobile-menu" id="mobile-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" 
+            type="button" 
+            data-menu-close
+            aria-label="Кнопка закрытия мобильного меню"
+            aria-expanded="false"
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav-menu list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-menu__link_accent-color link" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__phone">
+              <a class="mobile-menu__phone-link link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu__mail">
+              <a class="mobile-menu_mail-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="company-social list">
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Instagram
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Twitter
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Facebook
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link link">LinkedIn
+              </a>
+            </li>
+          </ul>
+            
+        </div>
+      </div>
+    </div>
+    
+  </header>
 
   <!-- Main content -->
 
@@ -71,16 +148,16 @@
 
     <!-- Hero section -->
 
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
-    </section> -->
+    </section>
 
     <!-- Benefits section -->
 
-    <!-- <section class="benefits">
+    <section class="benefits">
       <div class="container">
         <h2 class="title visually-hidden">Наш подход</h2>
         <ul class="grid list">
@@ -130,11 +207,11 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Serviсes section -->
 
-    <!-- <section class="services">
+    <section class="services">
       <div class="container">
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="grid list">
@@ -200,11 +277,11 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Team section-->
 
-    <!-- <section class="team section section_with-bg">
+    <section class="team section section_with-bg">
       <div class="container">
         <h2 class="title">Наша команда</h2>
         <ul class="grid list">
@@ -232,28 +309,32 @@
                 <p class="member-card__work-position">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link"
+                      aria-label="Иконка instagram">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link"
+                      aria-label="Иконка twitter">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link"
+                    aria-label="Иконка facebook">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link"
+                    aria-label="Иконка linkedIn"></a>>
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -286,31 +367,31 @@
                 <p class="member-card__work-position">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка instagram">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка twitter">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка facebook">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
-                      <svg class="social-list__icon social-list__icon_light-theme">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка linkedIn"></a>>
+                    <svg class="social-list__icon social-list__icon_light-theme">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
                     </a>
                   </li>
                 </ul>
@@ -340,31 +421,31 @@
                 <p class="member-card__work-position">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка instagram">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка twitter">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка facebook">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
-                      <svg class="social-list__icon social-list__icon_light-theme">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка linkedIn"></a>>
+                    <svg class="social-list__icon social-list__icon_light-theme">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
                     </a>
                   </li>
                 </ul>
@@ -394,31 +475,31 @@
                 <p class="member-card__work-position">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка instagram">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
-                      <svg class="social-list__icon social-list__icon_light-theme ">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка twitter">
+                      <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка facebook">
                       <svg class="social-list__icon social-list__icon_light-theme">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link social-list__link_light-theme-icon-bg link">
-                      <svg class="social-list__icon social-list__icon_light-theme">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
+                    <a href="#" class="social-list__link social-list__link_light-theme-icon-bg link" aria-label="Иконка linkedIn"></a>>
+                    <svg class="social-list__icon social-list__icon_light-theme">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
                     </a>
                   </li>
                 </ul>
@@ -428,51 +509,51 @@
 
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Clients section -->
 
-    <!-- <section class="clients section">
+    <section class="clients section">
       <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="grid clients__grid list">
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Ya & Go">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </a>
           </li>
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Tag Line Here">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </a>
           </li>
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Company">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </a>
           </li>
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Foster Peters">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </a>
           </li>
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Brand">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </a>
           </li>
           <li class="grid__cell clients__item">
-            <a href="" class="client-link link">
+            <a href="#" class="client-link link" aria-label="Логотип Company Tag Line">
               <svg class="client-link__icon client-link__icon_light-theme">
                 <use href="./images/icons.svg#icon-client6"></use>
               </svg>
@@ -481,7 +562,7 @@
 
         </ul>
       </div>
-    </section> -->
+    </section>
 
   </main>
 
@@ -512,28 +593,32 @@
           <b class="footer__title">присоединяйтесь</b>
           <ul class="social-list footer__social-list list">
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка instagram">
                 <svg class="social-list__icon social-list__icon_dark-theme">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка twitter">
                 <svg class="social-list__icon social-list__icon_dark-theme">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка facebook">
                 <svg class="social-list__icon social-list__icon_dark-theme">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка linkedin">
                 <svg class="social-list__icon social-list__icon_dark-theme">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -561,7 +646,7 @@
 
   <!-- Modal window -->
 
-  <!-- <div class="backdrop backdrop_is-hidden" data-modal>
+  <div class="backdrop backdrop_is-hidden" data-modal>
     <div class="modal">
       <button class="close-btn modal__close-btn" data-modal-close>
         <svg class="close-btn__icon">
@@ -601,17 +686,19 @@
           <svg class="custom-checkbox__icon">
             <use href="./images/icons.svg#icon-checked"></use>
           </svg>
-          Соглашаюсь с рассылкой и принимаю&nbsp;
-          <a class="custom-checkbox__link" href="" target="_blank" rel="noopener noreferrer nofollow">Условия
-            договора</a>
+          <span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="custom-checkbox__link" href="#" target="_blank" rel="noopener noreferrer nofollow">Условия
+              договора</a>
+          </span>
         </label>
         <button class="callback__btn" type="submit">Отправить</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <script src="./js/mobile-menu.js"></script>
-  <script src="./js/modal.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 
 
 </body>

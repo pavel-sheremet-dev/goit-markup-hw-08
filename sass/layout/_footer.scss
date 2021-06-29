@@ -54,24 +54,19 @@
       margin-bottom: 9px;
     }
   }
-
-  .footer_top-wrapper {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer_top-wrapper {
-    padding-left: 61px;
-    padding-right: 74px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
   }
 
   .footer__subscribe {
-    margin: 0 auto;
-    transform: translateX(7px);
-    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
   }
 }
 

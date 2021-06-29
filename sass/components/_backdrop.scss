@@ -6,12 +6,16 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  transition: opacity 250ms var(--timing-func),
-    visibility 250ms var(--timing-func);
+  transition: opacity 250ms linear, visibility 250ms linear;
+  overflow: auto;
 }
 
 .backdrop_is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.is-lock {
+  overflow: hidden;
 }

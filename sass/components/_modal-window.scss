@@ -2,13 +2,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  /* temporary */
-  min-height: 400px;
+  width: calc(100% - 30px);
+  max-height: calc(100vh - 30px);
   transform: translate(-50%, -50%) scaleY(1);
   border-radius: 4px;
   background-color: var(--alternate-logo-color);
   transition: transform 250ms var(--timing-func);
+  overflow: auto;
 }
 
 .backdrop_is-hidden {
@@ -21,4 +21,16 @@
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }

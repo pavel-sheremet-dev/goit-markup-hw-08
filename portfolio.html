@@ -15,53 +15,121 @@
   <title>Портфолио</title>
 </head>
 
-<body>
+<body body-locker>
 
   <!-- website header -->
 
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <a class="logo header__logo link" href="./index.html"><span class="logo_accent-color">Web</span>Studio</a>
       <nav class="navigation">
-        <ul class="menu-list list">
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line link" href="./index.html">
+        <ul class="nav-menu list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="./index.html">
               Студия
             </a>
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line menu-list__link_accent-color link"
-              href="./portfolio.html">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link_accent-color link" href="./portfolio.html">
               Портфолио
             </a>
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link_bottom-line link" href="#contacts">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="#contacts">
               Контакты
             </a>
           </li>
         </ul>
       </nav>
-      <ul class="menu-list header__menu-list list">
-        <li class="menu-list__item">
-          <a class="menu-list__link link" href="mailto:info@devstudio.com">
-            <svg class="menu-list__icon" width="16" height="12">
+      <ul class="contacts-menu list">
+        <li class="contacts-menu__item">
+          <a class="contacts-menu__link link" href="mailto:info@devstudio.com">
+            <svg class="contacts-menu__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link link" href="tel:+380961111111">
-            <svg class="menu-list__icon" width="10" height="16">
+        <li class="contacts-menu__item">
+          <a class="contacts-menu__link link" href="tel:+380961111111">
+            <svg class="contacts-menu__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
           </a>
         </li>
       </ul>
+      <button class="menu-opener-btn" type="button" data-menu-button aria-label="Кнопка открытия мобильного меню"
+        aria-expanded="false" aria-controls="mobile-menu-container">
+        <svg class="menu-opener-btn__icon" width="40" height="40">
+          <use class="menu-opener-btn__icon_open" href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  
+    <!-- MOBILE MENU with backdrop -->
+  
+    <div class="mobile-menu__backdrop backdrop backdrop_is-hidden is-close" data-menu>
+      <div class="mobile-menu" id="mobile-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" type="button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav-menu list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-menu__link_accent-color link" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__phone">
+              <a class="mobile-menu__phone-link link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu__mail">
+              <a class="mobile-menu_mail-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="company-social list">
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Instagram
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Twitter
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link_separator link">Facebook
+              </a>
+            </li>
+            <li class="company-social__item">
+              <a href="#" class="company-social__link company-social__link link">LinkedIn
+              </a>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </div>
+  
+  </header>
 
   <main class="main-content">
 
@@ -96,7 +164,7 @@
         <ul class="grid list">
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/tehnokryak-desktop.webp 1x, ./images/portfolio/tehnokryak-desktop@2x.webp 2x"
@@ -131,7 +199,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/new-orlean-vs-golden-star-desktop.webp 1x, ./images/portfolio/new-orlean-vs-golden-star-desktop@2x.webp 2x"
@@ -162,7 +230,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/seafood-desktop.webp 1x, ./images/portfolio/seafood-desktop@2x.webp 2x"
@@ -193,7 +261,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/prime-desktop.webp 1x, ./images/portfolio/prime-desktop@2x.webp 2x"
@@ -224,7 +292,7 @@
 
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/boxes-desktop.webp 1x, ./images/portfolio/boxes-desktop@2x.webp 2x"
@@ -255,7 +323,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/inspiration-has-no-borders-desktop.webp 1x, ./images/portfolio/inspiration-has-no-borders-desktop@2x.webp 2x"
@@ -286,7 +354,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/limited-edition-desktop.webp 1x, ./images/portfolio/limited-edition-desktop@2x.webp 2x"
@@ -317,7 +385,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/lab-desktop.webp 1x, ./images/portfolio/lab-desktop@2x.webp 2x"
@@ -348,7 +416,7 @@
         
           <li class="grid__cell portfolio__item">
             <article class="card-type3">
-              <a class="card-type3__link link" href="">
+              <a class="card-type3__link link" href="#">
                 <div class="card-type3__overlay">
                   <picture class="pictureset">
                     <source srcset="./images/portfolio/growing-business-desktop.webp 1x, ./images/portfolio/growing-business-desktop@2x.webp 2x"
@@ -383,57 +451,64 @@
 
   <!-- footer content -->
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__contacts">
-        <a class="logo logo_secondary-color link" href="./index.html"><span class="logo_accent-color">Web</span>Studio</a>
-        <address class="footer__address" id="contacts">
-          <ul class="footer__menu list">
-            <li class="footer__item"><a class="footer__link footer__link_address-color link"
-                href="https://goo.gl/maps/BkVQLuisvxyrpe818" target="_blank" rel="noopener noreferrer nofollow">г. Киев,
-                пр-т
-                Леси Украинки, 26</a>
-            </li>
-            <li class="footer__item"><a class="footer__link link " href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="footer__item"><a class="footer__link link " href="tel:+380961111111">+38 096 111
-                11 11</a></li>
-          </ul>
-        </address>
-      </div>
+      <div class="footer_top-wrapper">
+        <div class="footer__contacts">
+          <a class="logo footer__logo logo_secondary-color link" href="./index.html"><span
+              class="logo_accent-color">Web</span>Studio</a>
+          <address class="footer__address" id="contacts">
+            <ul class="footer__menu list">
+              <li class="footer__item"><a class="footer__link footer__link_address-color link"
+                  href="https://goo.gl/maps/BkVQLuisvxyrpe818" target="_blank" rel="noopener noreferrer nofollow">г. Киев,
+                  пр-т
+                  Леси Украинки, 26</a>
+              </li>
+              <li class="footer__item"><a class="footer__link link "
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer__item"><a class="footer__link link " href="tel:+380961111111">+38 096 111
+                  11 11</a></li>
+            </ul>
+          </address>
+        </div>
   
-      <div class="footer__social">
-        <b class="footer__title">присоединяйтесь</b>
-        <ul class="social-list list">
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
-              <svg class="social-list__icon social-list__icon_dark-theme">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
-              <svg class="social-list__icon social-list__icon_dark-theme">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
-              <svg class="social-list__icon social-list__icon_dark-theme">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link_dark-theme-icon-bg  link">
-              <svg class="social-list__icon social-list__icon_dark-theme">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer__social">
+          <b class="footer__title">присоединяйтесь</b>
+          <ul class="social-list footer__social-list list">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка instagram">
+                <svg class="social-list__icon social-list__icon_dark-theme">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link" aria-label="Иконка twitter">
+                <svg class="social-list__icon social-list__icon_dark-theme">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка facebook">
+                <svg class="social-list__icon social-list__icon_dark-theme">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link_dark-theme-icon-bg link"
+                aria-label="Иконка linkedin">
+                <svg class="social-list__icon social-list__icon_dark-theme">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
   
       <div class="footer__subscribe">
@@ -450,9 +525,9 @@
       </div>
   
     </div>
-  </footer> -->
+  </footer>
 
-  <!-- <script src="./js/mobile-menu.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

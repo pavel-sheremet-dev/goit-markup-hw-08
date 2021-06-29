@@ -8,7 +8,7 @@
   align-items: center;
 
   @include _fw_fs_lh_ls(500, 14, 16, 0.02);
-  color: var(--titles-text-color);
+  color: var(-primary-text-color);
 
   &:hover,
   &:focus {

@@ -241,6 +241,9 @@ body {
   .nav-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
+  .nav-menu__item:last-child {
+    margin-bottom: 64px;
+  }
   .nav-menu__link {
     font-weight: 500;
     font-size: 40px;
@@ -735,6 +738,14 @@ body {
 }
 
 .card-type3__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-func);
   transition: -webkit-box-shadow 250ms var(--timing-func);
   transition: box-shadow 250ms var(--timing-func);
@@ -764,12 +775,15 @@ body {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   overflow: auto;
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
+  padding: 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -788,6 +802,9 @@ body {
 }
 
 .card-type3__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1629,6 +1646,10 @@ body {
     -ms-flex-preferred-size: calc((100% - 180px) / 6);
         flex-basis: calc((100% - 180px) / 6);
   }
+}
+
+.card-type3 {
+  height: 100%;
 }
 
 .portfolio__filter {

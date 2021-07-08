@@ -7,6 +7,10 @@
     &:not(:last-child) {
       margin-bottom: 32px;
     }
+
+    &:last-child {
+      margin-bottom: 64px;
+    }
   }
 
   .nav-menu__link {
